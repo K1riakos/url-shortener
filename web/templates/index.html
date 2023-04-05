@@ -44,13 +44,14 @@
         <tbody>
           {% if context.urls %} {% for url in context.urls %}
           <tr>
-            
             <th class="has-text-centered">{{url.id}}</th>
             <td class="has-text-centered">
-              <a href="{{context.host}}{{url.short_url}}">{{context.host}}{{ url.short_url}}</a _blank>
-              </td>
-              <td class="has-text-centered">{{url.url}}</td>
-            </tr>
+              <a href="{{context.host}}{{url.short_url}}" target="_blank"
+                >{{context.host}}{{ url.short_url}}</a
+              >
+            </td>
+            <td class="has-text-centered">{{url.url}}</td>
+          </tr>
           {% endfor %} {% endif %}
         </tbody>
       </table>
