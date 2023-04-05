@@ -27,7 +27,7 @@ def home():
 @views.route('/<string:slug>')
 def away(slug):
   url = db.one_or_404(db.select(Url).filter_by(short_url=slug))
-  return redirect('https://'+url.url)
+  return redirect(url.url)
 
 
 
