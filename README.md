@@ -19,7 +19,7 @@ This is a simple URL shortener application built using Flask and SQLite as a dat
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/K1riakos/url-shortener.git
+git clone https://github.com/K1riakos/url-shortener-flask.git
 ```
 
 2. Install the required packages:
